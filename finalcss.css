@@ -1,0 +1,426 @@
+body {
+    font-family: "Verdana", Geneva, sans-serif;
+    background-color:#414141;
+    height:100vh;
+    overflow:hidden;
+}
+
+p {
+  font-size: 0.8em;  
+}
+
+#header{
+    left:5%;
+    position:fixed;
+    height:15%;
+    width: 90vw;
+    display:none;
+    background-color: white;
+}
+
+#indexbra{
+    height:80%;
+    position:absolute;
+    left:50%;
+    width:auto;
+    z-index: 9999;
+}
+#indexbra:hover{
+    border: 1px yellow dotted;
+    cursor:pointer;
+}
+
+#main{
+    top:10%;
+    left:5%;
+    position:absolute;
+    height:75vh;
+    width:90vw;
+    text-align:center;
+    background-color:white;
+    transition:opacity 0.8s;
+}
+
+#splash{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    position:absolute;
+    transition:2s;
+    background-color:white;
+}
+
+.optionbutt{
+    background-color: #414141;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position:absolute;
+    top:50%;
+    font-family: "Verdana", sans-serif;
+    display:inline-block;
+    border:none;
+    display:none;
+    font-size:3vh;
+    height:10%;
+}
+
+#facts{
+    left:30%;
+}
+
+#sizing{
+    left:60%;
+}
+
+.interactionzone {
+    display:none;
+    height:90%;
+    width:100%;
+    position:absolute;
+}
+
+#factobj{
+    background-image: url("imgs/shelves.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display:none;
+    height:100%;
+    width:100%;
+    background-color:white;
+}
+
+#sizeobj{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+#results{
+    height:20%;
+    width:95%;
+}
+.alert{
+    font-size:2em;
+}
+.clickables{
+    width: 10%;
+    height:100%;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.clickables:hover{
+    background-color:#eafffe;
+    cursor:pointer;
+}
+
+#ninja {
+    width:10%;
+    height:auto;
+    position:absolute;
+    bottom:-45%;
+    right: 0%;
+    z-index: 5;
+}
+
+.duk {
+    text-decoration: underline;
+    text-shadow:1px 1px #0088FF;
+}
+
+#food {
+    position:absolute;
+    right: 0.5%;
+    bottom: 1%;
+    height: 10%;
+    width: auto;
+    z-index: 100;
+    transition: opacity 0.6s;
+}
+
+#toxic {
+    position:absolute;
+    left: 0.5%;
+    bottom: 1%;
+    height: 5%;
+    width: auto;
+}
+
+#toprow{
+    position: absolute;
+    top: 13%;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 80%;
+    height: 15%;
+}
+
+#botrow {
+    position: absolute;
+    top: 54%;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    width: 80%;
+    height: 15%;
+}
+
+.infobox {
+    display:none;
+    height:35%;
+    width:70%;
+    border:1em solid #eafffe;
+    background-color: #414141;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin:auto;
+    color: white;
+    opacity:0.9;
+    z-index: 1;
+}
+
+.interestBox {
+    display:none;
+    height:35%;
+    width:70%;
+    border:1em solid antiquewhite;
+    background-color: #eafffe;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin:auto;
+    color: #414141;
+    z-index: 2;
+}
+
+#RLmask{
+    height:85%;
+    width:auto;
+    float:left;
+    position: relative;
+}
+#hiddenfact{
+    opacity:0;
+}
+ul {
+    text-align:left;
+}
+
+#close{
+    display: none;
+    position:absolute;
+    bottom: 10%;
+    left: 50%;
+    border:0.8em solid antiquewhite;
+    background-color:#eafffe;
+}
+.inpFormat{
+    display:block;
+    width:86%;
+    height:25%;
+    top:30%;
+    right:0px;
+    left:0px;
+    margin:2%;
+    padding:0.1%;
+    border: 1px #eafffe dotted;
+}
+
+.inpFormat:after {
+    margin: 0.3%;
+}
+
+.measurements{
+    display:inline-block;
+    width:40%;
+    height:80%;
+    font-size:0.8em;
+}
+#hidden{
+    display:none;
+}
+.displayresults{
+    width:80%%;
+    height:40%;
+    display:block;
+}
+.demoImg{
+    height:100%;
+    width:auto;
+}
+
+@media screen and (min-width:570px) and (max-width:768px) {
+    p, h4 {
+        font-size:0.8em;
+    }
+    .optionbutt{
+        font-size:3vh;
+        height:10%;
+    }
+    #indexbra {
+        height:85%;
+    }
+    #facts{
+        left:20%;
+    }
+
+    #sizing{
+        left:60%;
+    }
+    
+    #toprow{
+        top: 10%;
+        width: 90%;
+        height: 15%;
+    }
+    
+    #botrow {
+        top: 55%;
+        width: 90%;
+        height: 15%;
+    }
+    
+    .infobox {
+        font-size:2.1vh;
+        height:50%;
+        width:75%;
+        border:0.5em;
+    }
+    
+    .interestBox {
+        font-size:2.2vh;
+        height:35%;
+        width:70%;
+        border:0.5em solid antiquewhite;
+    }
+    .measurements{
+        display:inline-block;
+        width:80%;
+        height:85%;
+        font-size:0.6em;
+    }
+    #RLmask{
+        height:65%;
+    }
+
+    .clickables {
+        height:80%;
+        width:auto;
+        margin:3px;
+    }
+    
+    #ninja {
+        bottom: -25%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:569px){
+    body {
+        font-size:100%;
+    }
+    
+    h4{
+        font-size:0.5em;
+    }
+    
+    p{
+        font-size:0.4em;
+    }
+    .measurements {
+      font-size:0.2em;  
+    }
+    .optionbutt{
+        font-size:3vh;
+        height:10%;
+    }
+    
+    #facts{
+        left:20%;
+    }
+
+    #sizing{
+        left:55%;
+    }
+    .clickables {
+        height:55%;
+        width:15%;
+        margin: 3px;
+        padding:3px;
+    }
+    
+    #toprow{
+        top: 10%;
+        width: 90%;
+        height: 25%;
+    }
+    
+    #botrow {
+        top: 50%;
+        width: 90%;
+        height: 25%;
+    }
+    
+    .infobox {
+        font-size:2vh;
+        height:55%;
+        width:50%;
+        border:none;
+        padding: 3px;
+    }
+    
+    .interestBox {
+        font-size:2vh;
+        height:45%;
+        width:70%;
+        border:none;
+        background-color: #eafffe;
+        padding: 3px;
+    }
+    .duk {
+        text-decoration: underline;
+        text-shadow:none;
+        font-size: 1em;
+    }
+    #RLmask{
+        height:55%;
+    }
+    
+    #close{
+        bottom: 20%;
+        left: 45%;
+        border:0.2em dotted antiquewhite;
+    }
+    
+    .measurements{
+        display: block;
+        width:80vw;
+        height:90%;
+        font-size:80%;
+    }
+    #indexbra {
+        top: 0px;
+        height:85%;
+        position:absolute;
+        left:45%;
+    }
+    
+    #ninja {
+        bottom:-5%;
+    }
+    .demoImg{
+        display:none;
+    }
+
+}
+
