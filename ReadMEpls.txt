@@ -8,6 +8,7 @@ The 4 images on the bottom shelf can be clicked to access the facts.
 Press Close after each image.
 
 The hazard image and the food bowl on the bottom corners can be clicked.
+Hover over food bowl to attract the cat, click to let cat eat
 Press Close after each image.
 
 Press the bra in the header to return to the navigation page.
