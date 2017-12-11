@@ -8,12 +8,21 @@ var splashBra = document.getElementById("splash"),
     sizeBox = document.getElementById("sizeobj"),
     getSize = document.getElementById("getSize"),
     Display = document.getElementById("results"),
-    cupHistory = [],
-    bandHistory = [],
     SaveButt = document.getElementById("save"),
     StatsButt = document.getElementById("statsButt"),
     BustInp = document.getElementById("bustsize"),
     BandInp = document.getElementById("bandsize");
+
+var cupHistory = JSON.parse(localStorage.getItem("cups")),
+    bandHistory = JSON.parse(localStorage.getItem("bands"));
+
+// In Javascript, a variable will return False if it's undefined or null
+if (!cupHistory) {
+	cupHistory = [];
+}
+if (!bandHistory) {
+	bandHistory = [];
+}
 
 //interactive items
 var RegBra = document.getElementById("regbra"),
@@ -220,8 +229,7 @@ function makeEven(){
 //Appending the new div
 function DisplayStats(){
     var ndiv = document.createElement("div"),
-        getCups = findCommonCup();
-        results = JSON.stringify(getCups, null, "\t");
+        results = findCommonCup();
     console.log(results);
     Display.appendChild(ndiv);
     ndiv.style.display = "block";
@@ -234,7 +242,13 @@ function DisplayStats(){
     ndiv.style.padding = 2 + "px";
     ndiv.style.backgroundColor = "#eafffe";
     
-    ndiv.innerHTML = '<b>These are the tally of cups so far</b>: <br><pre>' + results;
+    // ndiv.innerHTML = '<b>These are the tally of cups so far</b>: <br><pre>' + results;
+    ndiv.innerHTML = '<b>These are the tally of cups so far</b>: <br><pre>';
+
+    var cups = Object.keys(results);
+    for(var i in cups){
+       ndiv.innerHTML += '<b>' + cups[i] + '</b>' + ": " + results[cups[i]] + "<br>";
+   	};
     
     document.getElementById("hidden").addEventListener("click", function(){
         ndiv.style.display = "none";
@@ -267,6 +281,9 @@ function saveLocally(){
 getSize.addEventListener("click", function () {
     var userband = makeEven(),
         usercup = CupSize();
+
+    console.log(cupHistory);
+    console.log(bandHistory);
     
     if (usercup.length > 2){
         alert(usercup);
