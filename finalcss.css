@@ -21,7 +21,7 @@ p {
 #indexbra{
     height:80%;
     position:absolute;
-    left:45%;
+    left:46%;
     width:auto;
     z-index: 99;
 }
@@ -225,6 +225,7 @@ ul {
     border:0.8em solid antiquewhite;
     background-color:#eafffe;
 }
+
 .inpFormat{
     display:block;
     width:86%;
@@ -260,7 +261,8 @@ ul {
     width:auto;
 }
 
-@media screen and (min-width:570px) and (max-width:1024px) {
+
+@media screen and (min-width:668px) and (max-width:780px) {
     p, h4 {
         font-size:1em;
     }
@@ -270,7 +272,7 @@ ul {
     }
     #indexbra {
         height:85%;
-        left:40%;
+        left:45%;
     }
     #facts{
         left:20%;
@@ -281,13 +283,13 @@ ul {
     }
     
     #toprow{
-        top: 25%;
+        top: 15%;
         width: 90%;
         height: 15%;
     }
     
     #botrow {
-        top: 50%;
+        top: 56%;
         width: 90%;
         height: 15%;
     }
@@ -306,10 +308,10 @@ ul {
         border:0.5em solid antiquewhite;
     }
     .measurements{
-        display:block;
-        width:80%;
+        display:inline-block;
+        width:50%;
         height:50%;
-        font-size:1em;
+        font-size:0.7em;
     }
     #RLmask{
         height:65%;
@@ -330,7 +332,7 @@ ul {
     }
 }
 
-@media screen and (min-width:220px) and (max-width:569px){
+@media screen and (min-width:220px) and (max-width:667px){
     body {
         font-size:100%;
     }
