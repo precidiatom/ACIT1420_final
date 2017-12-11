@@ -23,7 +23,7 @@ p {
     position:absolute;
     left:45%;
     width:auto;
-    z-index: 9999;
+    z-index: 99;
 }
 #indexbra:hover{
     border: 1px yellow dotted;
@@ -260,9 +260,9 @@ ul {
     width:auto;
 }
 
-@media screen and (min-width:570px) and (max-width:768px) {
+@media screen and (min-width:570px) and (max-width:1024px) {
     p, h4 {
-        font-size:0.8em;
+        font-size:1em;
     }
     .optionbutt{
         font-size:3vh;
@@ -270,6 +270,7 @@ ul {
     }
     #indexbra {
         height:85%;
+        left:40%;
     }
     #facts{
         left:20%;
@@ -280,13 +281,13 @@ ul {
     }
     
     #toprow{
-        top: 10%;
+        top: 25%;
         width: 90%;
         height: 15%;
     }
     
     #botrow {
-        top: 55%;
+        top: 50%;
         width: 90%;
         height: 15%;
     }
@@ -305,17 +306,17 @@ ul {
         border:0.5em solid antiquewhite;
     }
     .measurements{
-        display:inline-block;
+        display:block;
         width:80%;
-        height:85%;
-        font-size:0.6em;
+        height:50%;
+        font-size:1em;
     }
     #RLmask{
         height:65%;
     }
 
     .clickables {
-        height:80%;
+        height:70%;
         width:auto;
         margin:3px;
     }
@@ -323,9 +324,13 @@ ul {
     #ninja {
         bottom: -25%;
     }
+    .demoImg{
+        height:50%;
+        float:left;
+    }
 }
 
-@media screen and (min-width:320px) and (max-width:569px){
+@media screen and (min-width:220px) and (max-width:569px){
     body {
         font-size:100%;
     }
@@ -333,14 +338,9 @@ ul {
     h4{
         font-size:0.5em;
     }
-    #indexBra{
-        left:20%;
-    }
-    p{
-        font-size:0.4em;
-    }
-    .measurements {
-      font-size:0.2em;  
+    
+    p {
+        font-size:0.9em;
     }
     .optionbutt{
         font-size:3vh;
@@ -348,11 +348,11 @@ ul {
     }
     
     #facts{
-        left:20%;
+        left:10%;
     }
 
     #sizing{
-        left:55%;
+        left:50%;
     }
     .clickables {
         height:55%;
@@ -362,13 +362,13 @@ ul {
     }
     
     #toprow{
-        top: 20%;
+        top: 10%;
         width: 90%;
         height: 25%;
     }
     
     #botrow {
-        top: 45%;
+        top: 60%;
         width: 90%;
         height: 25%;
     }
@@ -407,18 +407,18 @@ ul {
     .measurements{
         display: block;
         width:80vw;
-        height:90%;
+        height:50%;
         font-size:80%;
     }
     #indexbra {
         top: 0px;
         height:85%;
         position:absolute;
-        left:45%;
+        left:40%;
     }
     
     #ninja {
-        bottom:-5%;
+        bottom:-10%;
     }
     .demoImg{
         display:none;
